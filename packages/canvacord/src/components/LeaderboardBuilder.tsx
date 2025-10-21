@@ -374,8 +374,8 @@ export class LeaderboardBuilder extends Builder<LeaderboardProps> {
         </div>
 
         <div className="flex flex-col items-end">
-          {xp && <div className="text-xl font-medium flex">{fixed(xp, this.options.get("abbreviate"))} XP</div>}
-          {level && <div className="text-xl font-medium flex">Level {level}</div>}
+          <div className="text-xl font-medium flex">{fixed(xp, this.options.get("abbreviate"))} XP</div>
+          <div className="text-xl font-medium flex">Level {level}</div>
         </div>
       </div>
     );
